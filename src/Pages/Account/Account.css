@@ -1,0 +1,47 @@
+.Account__content{
+	margin-top: 30px;
+	display: flex;
+	border: 5px solid teal;
+	border-radius: 10px;
+	padding: 10px 15px;
+}
+.person-elem{
+	border-bottom: 2px solid teal;
+	margin-bottom: 15px;
+}
+.content__avatar{
+	max-width: 300px;
+}
+.achiv{
+	display: flex;
+	flex-wrap: wrap
+	
+}
+.info__person{
+	margin-bottom: 50px;
+}
+.achiv__elem{
+	min-width: 48%;
+	padding: 15px;
+	background-color: teal;
+	margin: 0 10px 10px 0;
+	border-radius: 15px ;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+}
+.achiv__rang{
+	background-color: #C0C0C0;
+}
+.achiv__likes{
+	background-color: #e64b40;
+}
+.achiv__friends{
+	background-color:#ebba1c;
+	
+}
+.btn__exit{
+	margin-top: 20px;
+	margin-left: auto;
+}

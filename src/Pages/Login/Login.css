@@ -1,0 +1,20 @@
+.Auth{
+	border: 2px solid teal;
+	padding: 10px 15px;
+	border-radius: 10px;
+	margin-top: 40px;
+	text-align: center;
+	max-width:700px;
+	font-family: 'Bebas Neue';
+}
+.form__item{
+	margin-bottom: 10px;
+}
+.Auth__title{
+	text-transform: uppercase;
+	color: teal;
+}
+.form__btn{
+	margin-right: 10px;
+	display: inline;
+}

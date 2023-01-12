@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter} from 'react-router-dom';
+import Navbar from './Components/UI/navbar/Navbar';
+import './App.css'
+import AppRouter from './Components/AppRouter';
+import {AufContext} from './Context/index'
+import { useEffect, useState } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [isAuf, setIsAuf] = useState(false);
+	const [login, setLogin] = useState(false);
+
+	useEffect(()=>{
+		if(localStorage.getItem('auf')){
+			setIsAuf(true);
+		}
+	},[])
+
+	return(
+		
+			
+		<AufContext.Provider value={{
+			login: login,
+			isAuf: isAuf,
+			setIsAuf: setIsAuf,
+			setLogin: setLogin,
+		
+		}}>
+			<BrowserRouter>
+				<Navbar/>
+				<AppRouter/>
+			</BrowserRouter>
+		</AufContext.Provider>
+	)
 }
 
 export default App;

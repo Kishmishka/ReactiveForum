@@ -1,0 +1,62 @@
+.myLoader{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: 0 auto;
+	animation: rotate 3s infinite linear;
+	position: relative;
+	
+}
+.myLoader::before{
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: 0 auto;
+	animation: rotate2 2s infinite linear;
+}
+.myLoader::after{
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: 0 auto;
+	animation: rotate3 4s infinite linear;
+}
+
+@keyframes rotate{
+	from{
+		
+		transform: rotate3d(1,0,0,20deg);
+	}
+	to{
+		transform: rotate3d(1,0,0,380deg);;
+	}
+}
+@keyframes rotate2{
+	from{
+		
+		transform: rotate3d(1,1,0,45deg);
+	}
+	to{
+		transform: rotate3d(1,1,0,405deg);;
+	}
+}
+@keyframes rotate3{
+	from{
+		
+		transform: rotate3d(0,1,0,80deg);
+	}
+	to{
+		transform: rotate3d(0,1,0,440deg);;
+	}
+}

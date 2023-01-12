@@ -1,0 +1,34 @@
+.pagelist{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	
+ }
+ .pagelist__elem{
+		padding: 5px 15px;
+		color: teal;
+		font-size: 16px;
+		position: static;
+		
+		border: 2px solid #1E6A7B;
+		border-radius: 10px;
+		transition: 0.3s;
+		font-weight: 700;
+		margin-right:5px ;
+		background-color: white;
+		box-shadow: 3px 3px #1E6A7B;
+ }
+ .pagelist__elem:last-child{
+	margin-right:0px ;
+}
+ .pagelist__elem:hover{
+	transform: translate(3px,3px);
+	
+	box-shadow: none;
+}
+.select{
+	transform: translate(3px,3px);
+	box-shadow: none;
+	position: relative;
+	z-index: 0;
+ }

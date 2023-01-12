@@ -1,0 +1,17 @@
+.post-enter {
+	transform: translateX(3500px);
+ }
+ .post-enter-active {
+	transform: translateX(0);
+	transition:  0.5s ease-in;
+ }
+ .post-exit {
+	transform: translateX(0);
+ }
+ .post-exit-active {
+	transform: translateX(-3500px);
+	transition:  500ms ease-in;
+ }
+.postList{
+	display: flex;
+}

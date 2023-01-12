@@ -1,0 +1,22 @@
+
+.post{
+	position: relative;
+	border: solid 3px teal;
+	padding: 10px 15px;
+	border-radius: 15px;
+	max-width: 800px;
+	background-color: white;
+	z-index: 5;
+}
+.content{
+	padding-bottom: 10px;
+}
+.coments{
+	padding-top: 10px;
+	border-top: solid 3px teal;
+}
+
+.coment__name{margin-bottom: 5px;}
+.coment__body{
+	margin-bottom: 17px
+}
